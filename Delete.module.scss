@@ -1,0 +1,64 @@
+@import "./mixin";
+
+.delete{
+    background-color: black;
+    overflow: hidden;
+    box-shadow: $shadow;
+    // height: 92vh;
+    border-radius: 10px;
+    .close{
+        color: white;
+        font-size: 3rem;
+        filter: drop-shadow(0px 0px 2px white);
+        border-radius: $radius;
+    }
+    .form{
+        @include Flex($justify:space-between,$dir:row);
+        h3{
+            color: white;
+            text-align: center;
+            border-bottom: 2px solid rgb(224, 224, 224);       
+        }
+
+
+        div{
+            transition: .5s ease-in-out;
+            box-shadow: $shadow;
+            border-radius: $radius;
+            margin:1rem 0rem;
+            .icon{
+                color: white;
+                font-size: 2rem;
+            }
+            .field{
+                color: white;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                resize: none;
+                &::placeholder{
+                    color:white;
+                }
+            }
+            
+            &:hover{
+                @include hoverUp(-5px);
+            }
+        }
+        .Del{
+            color:rgb(224, 224, 224);
+            font-weight: $font-heading;
+            // letter-spacing: .1rem;
+            // text-transform: capitalize;
+            font-size: 1.2rem;
+            transition: .5s ease-in-out;
+            box-shadow: $shadow;
+            &:hover{
+                // color:$black;
+                background-color: rgb(252, 5, 5);
+                transform: scale(1.01);
+            }
+        } 
+
+    }
+}
