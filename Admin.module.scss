@@ -1,0 +1,10 @@
+@import "./mixin";
+
+.home{
+    // background-color: black;
+  
+    .cards{
+        @include Flex($dir:row);
+    }
+  
+}
