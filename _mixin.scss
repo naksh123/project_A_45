@@ -1,0 +1,27 @@
+@mixin  Flex($justify:center,$align:center,$dir:column,$wrap:wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+@mixin hoverUp($move:-50px) {
+    transform: translateY($move);
+}
+@mixin hoverOut {
+    transform: scale(1.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+$navbar:#450555;
+$black:rgb(27, 0, 0);
+$white:white;
+$blue:rgb(0, 0, 255);
+$red:red;
+$pink:rgb(243, 16, 111);
+$bg-main:rgba(236, 235, 235, 0.664);
+$radius:5px;
+$shadow:0px 0px 2px 2px rgb(199, 199, 199);
+$font-family: 'Hahmlet', serif;
+$duration:0.5s;
+$font-heading: 900;
