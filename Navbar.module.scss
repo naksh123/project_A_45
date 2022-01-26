@@ -1,0 +1,42 @@
+// @import "./var";
+@import "./mixin";
+
+.navbar{
+    // background-color: $navbar;
+    background-color: transparent;
+    position: relative;
+    .link_container{
+        .logo{
+            text-decoration: none;
+            color:white;
+            font-size: 2rem;
+        }
+        .main_link{
+            font-family: $font-family;
+            .navbar_nav{
+                @include Flex($justify:flex-end,$dir:row);
+                .nav_item{
+                    @include Flex();
+                    .navlink{
+                        text-decoration: none;
+                        color:$white;
+                        background-color: transparent;
+                        padding:  .5rem 1rem;
+                        margin:  .5rem 1rem;
+                        box-shadow:inset $shadow;
+                        border-radius: $radius;
+                        transition:  $duration;
+                        &:hover{
+                            @include hoverUp(-5px)
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+            
+        }
+
+    }
+}
